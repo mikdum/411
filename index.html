@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#411 JavaScript: Lomakkeen validointi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Rekisteröitymislomake</h1>
+    <h2>Siiry kentästä toiseen tab-näppäimellä</h2>
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col-25">
+                    <label for="KayttajaID">Käyttäjä ID:</label>
+                </div>
+                <div class="col-25">
+                    <input type="text" id="KayttajaID" name="KayttajaID">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="Salasana">Salasana:</label>
+                </div>
+                <div class="col-25">
+                    <input type="text" id="Salasana" name="Salasana">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="Nimi">Nimi:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="Nimi" name="Nimi">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="Osoite">Osoite:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="Osoite" name="Osoite">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="Maa">Maa:</label>
+                </div>
+                <div class="col-25">
+                    <select id="Maa" name="Maa">
+                        <option disabled selected>(Valitse maa)</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="suomi">Suomi</option>
+                        <option value="venaja">Venäjä</option>
+
+
+                    </select>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="Postinumero">Postinumero:</label>
+                </div>
+                <div class="col-35">
+                    <input type="text" id="Postinumero" name="Postinumero">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="Sähkoposti">Sähkoposti:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="Sähkoposti" name="Sähkoposti">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-25">
+
+                    <label for="sukupuoli">Sukupuoli: </label>
+                    
+                </div>
+                <div class="col-75">
+                    <input type="radio" name="sukupuoli" id="mies">
+                    <label for="mies">Mies</label>
+                    <input type="radio" name="sukupuoli" id="nainen">
+                    <label for="nainen">Nainen</label><br>
+            
+                </div>
+            </div>
+
+
+
+
+
+            <div class="row">
+                <div class="col-25">
+                
+                    <label for="kieli">Kieli: </label>
+                    
+                </div>
+                <div class="col-75">
+                    <input type="checkbox" name="kieli" id="suomi">
+                    <label for="suomi">Suomi</label>
+                    <input type="checkbox" name="kieli" id="muu">
+                    <label for="muu">Muu kuin suomi</label><br>
+          
+                
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25 col-heigth">
+                    <label for="Lisätietoja">Lisätietoja:</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="Lisätietoja" name="Lisätietoja" placeholder="Write something.." style="height:200px"></textarea>
+
+               
+               
+                </div>
+            </div>      
+            <div class="row">
+                
+                <a class="btn btn-secondary btn-sm " href="#" role="button">Lähetä </a>
+            </div>      
+        </form>
+
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
