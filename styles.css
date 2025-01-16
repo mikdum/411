@@ -9,6 +9,7 @@ h2 {
 }
 
 input[type=text],
+input[type=password],
 select,
 textarea {
     width: 100%;
@@ -100,4 +101,8 @@ input[type=submit]:hover {
         width: 100%;
         margin-top: 0;
     }
+}
+.errormessage{
+    color: red;
+    font-weight: bold;
 }

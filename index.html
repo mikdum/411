@@ -27,7 +27,7 @@
                     <label for="KayttajaID">Käyttäjä ID:</label>
                 </div>
                 <div class="col-25">
-                    <input type="text" id="KayttajaID" name="KayttajaID">
+                    <input type="text" id="KäyttäjäID" name="KäyttäjäID" required>
                 </div>
             </div>
             <div class="row">
@@ -35,7 +35,7 @@
                     <label for="Salasana">Salasana:</label>
                 </div>
                 <div class="col-25">
-                    <input type="text" id="Salasana" name="Salasana">
+                    <input type="password" id="Salasana" name="Salasana" required>
                 </div>
             </div>
             <div class="row">
@@ -43,7 +43,7 @@
                     <label for="Nimi">Nimi:</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="Nimi" name="Nimi">
+                    <input type="text" id="Nimi" name="Nimi" required>
                 </div>
             </div>
             <div class="row">
@@ -51,7 +51,7 @@
                     <label for="Osoite">Osoite:</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="Osoite" name="Osoite">
+                    <input type="text" id="Osoite" name="Osoite" required>
                 </div>
             </div>
             <div class="row">
@@ -66,8 +66,6 @@
                         <option value="usa">USA</option>
                         <option value="suomi">Suomi</option>
                         <option value="venaja">Venäjä</option>
-
-
                     </select>
 
                 </div>
@@ -77,7 +75,7 @@
                     <label for="Postinumero">Postinumero:</label>
                 </div>
                 <div class="col-35">
-                    <input type="text" id="Postinumero" name="Postinumero">
+                    <input type="text" id="Postinumero" name="Postinumero" required>
                 </div>
             </div>
             <div class="row">
@@ -85,43 +83,33 @@
                     <label for="Sähkoposti">Sähkoposti:</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="Sähkoposti" name="Sähkoposti">
+                    <input type="text" id="Sähkoposti" name="Sähkoposti" required>
                 </div>
             </div>
-
-
             <div class="row">
                 <div class="col-25">
-
                     <label for="sukupuoli">Sukupuoli: </label>
-                    
                 </div>
                 <div class="col-75">
-                    <input type="radio" name="sukupuoli" id="mies">
+                    <input type="radio" name="sukupuoli" value="mies">
                     <label for="mies">Mies</label>
-                    <input type="radio" name="sukupuoli" id="nainen">
+                    <input type="radio" name="sukupuoli" value="nainen">
                     <label for="nainen">Nainen</label><br>
-            
+                   
+                
                 </div>
             </div>
-
-
-
-
-
             <div class="row">
                 <div class="col-25">
-                
+
                     <label for="kieli">Kieli: </label>
-                    
+
                 </div>
                 <div class="col-75">
                     <input type="checkbox" name="kieli" id="suomi">
                     <label for="suomi">Suomi</label>
                     <input type="checkbox" name="kieli" id="muu">
                     <label for="muu">Muu kuin suomi</label><br>
-          
-                
                 </div>
             </div>
 
@@ -130,26 +118,19 @@
                     <label for="Lisätietoja">Lisätietoja:</label>
                 </div>
                 <div class="col-75">
-                    <textarea id="Lisätietoja" name="Lisätietoja" placeholder="Write something.." style="height:200px"></textarea>
-
-               
-               
+                    <textarea id="Lisätietoja" name="Lisätietoja" placeholder="Write something.."
+                        style="height:200px"></textarea>
                 </div>
-            </div>      
+            </div>
             <div class="row">
-                
-                <a class="btn btn-secondary btn-sm " href="#" role="button">Lähetä </a>
-            </div>      
+                <p class="errormessage"> </p>
+ 
+            </div>
+            <div class="row">
+                <a class="btn btn-secondary btn-sm " role="button" id="btn_lähetä">Lähetä </a>
+            </div>
         </form>
-
-
     </div>
-
-
-
-
-
-
 </body>
 
 </html>
